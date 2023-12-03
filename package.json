@@ -1,5 +1,5 @@
 {
-  "name": "rayokdesign-strapi",
+  "name": "docker-strapi",
   "private": true,
   "version": "0.1.1",
   "description": "A Strapi Application For Docker",
