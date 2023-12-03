@@ -1,7 +1,7 @@
 {
   "name": "rayokdesign-strapi",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Strapi Application For Docker",
   "scripts": {
     "develop": "strapi develop",
@@ -19,11 +19,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
-    "styled-components": "5.3.3",
-    "strapi-tiptap-editor": "^0.9.12",
-    "pg": "^8.11.3",
-    "@strapi/provider-email-sendgrid": "^4.15.5",
-    "@strapi/plugin-graphql": "^4.15.5"
+    "styled-components": "5.3.3"
   },
   "author": {
     "name": "Wei Cheng Chen"
