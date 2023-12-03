@@ -1,0 +1,39 @@
+{
+  "name": "rayokdesign-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi Application For Docker",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.15.5",
+    "@strapi/plugin-users-permissions": "4.15.5",
+    "@strapi/plugin-i18n": "4.15.5",
+    "@strapi/plugin-cloud": "4.15.5",
+    "better-sqlite3": "8.6.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3",
+    "strapi-tiptap-editor": "^0.9.12",
+    "pg": "^8.11.3",
+    "@strapi/provider-email-sendgrid": "^4.15.5",
+    "@strapi/plugin-graphql": "^4.15.5"
+  },
+  "author": {
+    "name": "Wei Cheng Chen"
+  },
+  "strapi": {
+    "uuid": "df8b5c96-eeee-4e1b-bbaf-81afa28a6d38"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
