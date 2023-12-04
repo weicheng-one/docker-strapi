@@ -29,6 +29,6 @@ USER node
 EXPOSE 1337
 CMD ["npm", "run", "start"]
 
-#docker build -t rayokdesign/strapi:0.1.0 .
+#docker build -t rayokdesign/docker-strapi:0.1.5 .
 #docker image tag strapi-yarn:latest rayokdesign/strapi-yarn:latest
-#docker push
+#docker push rayokdesign/docker-strapi:0.1.5
