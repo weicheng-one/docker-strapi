@@ -1,7 +1,7 @@
 {
   "name": "docker-strapi",
   "private": true,
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "A Strapi application for Docker",
   "scripts": {
     "develop": "strapi develop",
@@ -15,18 +15,16 @@
     "@strapi/plugin-users-permissions": "4.15.5",
     "@strapi/plugin-i18n": "4.15.5",
     "@strapi/plugin-cloud": "4.15.5",
-    "better-sqlite3": "8.6.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
     "styled-components": "5.3.3",
     "strapi-tiptap-editor": "^0.9.12",
     "pg": "^8.11.3",
-    "@strapi/provider-email-sendgrid": "^4.15.5",
-    "@strapi/plugin-graphql": "^4.15.5"
+    "@strapi/provider-email-sendgrid": "^4.15.5"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Wei Cheng Chen"
   },
   "strapi": {
     "uuid": "03b3ff8e-990f-41ed-ae0f-4754bf8e5874"
