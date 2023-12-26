@@ -18,6 +18,7 @@ FROM node:20.10.0-alpine
 RUN apk add --no-cache vips-dev
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
+ENV START_MODE=${START_MODE}
 WORKDIR /opt/
 COPY --from=build /opt/node_modules ./node_modules
 WORKDIR /opt/app
@@ -27,8 +28,7 @@ ENV PATH /opt/node_modules/.bin:$PATH
 RUN chown -R node:node /opt/app
 USER node
 EXPOSE 1337
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", $START_MODE]
 
-#docker build -t rayokdesign/docker-strapi:0.1.5 .
-#docker image tag strapi-yarn:latest rayokdesign/strapi-yarn:latest
-#docker push rayokdesign/docker-strapi:0.1.5
+#docker build -t rayokdesign/docker-strapi:latest -t rayokdesign/docker-strapi:0.3.1 .
+#docker push rayokdesign/docker-strapi:0.3.1

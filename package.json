@@ -1,37 +1,37 @@
 {
   "name": "docker-strapi",
+  "version": "0.3.1",
   "private": true,
-  "version": "0.3.0",
-  "description": "Update strapi to version 4.16.2",
-  "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
-  },
-  "devDependencies": {},
-  "dependencies": {
-    "@strapi/strapi": "4.16.2",
-    "@strapi/plugin-users-permissions": "4.16.2",
-    "@strapi/plugin-i18n": "4.16.2",
-    "@strapi/plugin-cloud": "4.16.2",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "5.3.4",
-    "styled-components": "5.3.3",
-    "strapi-tiptap-editor": "^0.9.12",
-    "pg": "^8.11.3",
-    "@strapi/provider-email-sendgrid": "^4.16.2"
-  },
+  "description": "Add variable to control start mode",
+  "license": "MIT",
   "author": {
     "name": "Wei Cheng Chen"
   },
-  "strapi": {
-    "uuid": "03b3ff8e-990f-41ed-ae0f-4754bf8e5874"
+  "scripts": {
+    "build": "strapi build",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
   },
+  "dependencies": {
+    "@strapi/plugin-cloud": "4.16.2",
+    "@strapi/plugin-i18n": "4.16.2",
+    "@strapi/plugin-users-permissions": "4.16.2",
+    "@strapi/provider-email-sendgrid": "^4.16.2",
+    "@strapi/strapi": "4.16.2",
+    "pg": "^8.11.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-tiptap-editor": "^0.9.12",
+    "styled-components": "5.3.3"
+  },
+  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "strapi": {
+    "uuid": "03b3ff8e-990f-41ed-ae0f-4754bf8e5874"
+  }
 }
