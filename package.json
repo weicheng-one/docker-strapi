@@ -1,8 +1,8 @@
 {
   "name": "docker-strapi",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "private": true,
-  "description": "Add variable to control start mode",
+  "description": "Weicheng Chen personal blog",
   "license": "MIT",
   "author": {
     "name": "Wei Cheng Chen"
@@ -19,6 +19,7 @@
     "@strapi/plugin-users-permissions": "4.16.2",
     "@strapi/provider-email-sendgrid": "^4.16.2",
     "@strapi/strapi": "4.16.2",
+    "better-sqlite3": "^9.2.2",
     "pg": "^8.11.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -26,7 +27,6 @@
     "strapi-tiptap-editor": "^0.9.12",
     "styled-components": "5.3.3"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"

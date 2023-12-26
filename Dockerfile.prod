@@ -1,7 +1,7 @@
 # Creating multi-stage build for production
 FROM node:20.10.0-alpine as build
 RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev vips-dev git > /dev/null 2>&1
-ARG NODE_ENV=development
+ARG NODE_ENV=production
 
 WORKDIR /opt/
 COPY package.json package-lock.json ./
@@ -15,7 +15,7 @@ RUN npm run build
 # Creating final production image
 FROM node:20.10.0-alpine
 RUN apk add --no-cache vips-dev
-ARG NODE_ENV=development
+ARG NODE_ENV=production
 WORKDIR /opt/
 COPY --from=build /opt/node_modules ./node_modules
 WORKDIR /opt/app
@@ -25,8 +25,8 @@ ENV PATH /opt/node_modules/.bin:$PATH
 RUN chown -R node:node /opt/app
 USER node
 EXPOSE 1337
-CMD ["npm", "run", "develop"]
+CMD ["npm", "run", "start"]
 
-#docker build -t rayokdesign/weicheng-strapi:0.3.2-Dev .
-#docker push rayokdesign/weicheng-strapi:0.3.2-Dev
+#docker build -t rayokdesign/weicheng-strapi:latest -t rayokdesign/weicheng-strapi:0.3.2 -f Dockerfile.prod .
+#docker push -a rayokdesign/weicheng-strapi
 #docker tag  OldTag NewTag
